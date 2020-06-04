@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#9C27B0"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:text="Bluetooth" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:textColor="#E91E63"
+        android:layout_marginTop="20sp"
+        android:hint="name of my device"
+        android:gravity="center"
+        android:text="" />
+
+    <CheckBox
+        android:id="@+id/enable_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Enable" />
+
+    <CheckBox
+        android:id="@+id/visible_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Visible" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="55dp"
+        android:layout_height="43dp"
+        android:id="@+id/search_bt"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="#E91E63"
+        android:src="@drawable/ic_action_name"></androidx.appcompat.widget.AppCompatImageView>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
